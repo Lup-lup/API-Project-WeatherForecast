@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
+        <title>Weather Forecast</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="head-container">
+            <div class="date-container">
+                <p id="todayDate" class="date">01 July</p>
+                <p class="time" id="todayDateTime">1:50pm</p>
+            </div>
+            <div class="search-container"></div>
+                <input id="searchCity" type="text" placeholder="Location">
+                <button onclick="getInfo()">Search</button>
+            <div class="place-container">
+                <div class="city" id="city">Melbourne</div>
+                <div class="country" id="country">Australia</div>
+            </div>
+        </div>
+
+        <div class="today-weather">
+            <div class="current-info">
+                <div id="todayWeekDate" class="today">Monday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="weather-icon" id="todayWeatherIcon">
+                <div class="todayDesc" id="todayDesc">Sunny</div>
+                <div id="todayTemp" class="temp">- 15&#176; C</div>
+                <div class="other-item">
+                    <p>Humidity</p>
+                    <p id="humidity">95%</p>
+                </div>
+                <div class="other-item">
+                    <p>Wind Speed</p>
+                    <p id="windspeed">125</p>
+                </div>
+                <div class="other-item">
+                    <p>Pressure</p>
+                    <p id="pressure">161</p>
+                </div>
+                <div class="other-item">
+                    <p>Sunrise</p>
+                    <p id="sunriseTime">5:00AM</p>
+                </div>
+                <div class="other-item">
+                    <p>Sunset</p>
+                    <p id="sunsetTime">5:00PM</p>
+                </div>
+            </div>
+
+            <div class="today-forecast">
+                <p>Next 3 hour weather</p>
+                <div class="hourly-forecast">
+                    <div class="time" id="todayTime1">18:00PM</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="weather-icon" id="todayWeatherIcon1">
+                    <div class="temp" id="todayTemp1">- 15&#176; C</div>
+                </div>
+                <div class="hourly-forecast">
+                    <div class="time" id="todayTime2">18:00PM</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="weather-icon" id="todayWeatherIcon2">
+                    <div class="temp" id="todayTemp2">- 15&#176; C</div>
+                </div>
+                <div class="hourly-forecast">
+                    <div class="time" id="todayTime3">18:00PM</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="weather-icon" id="todayWeatherIcon3">
+                    <div class="temp" id="todayTemp3">- 15&#176; C</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="future-weather" id="future-weather">
+            <div class="future-forecast">
+                <div class="day" id="futureDay1">Tomorrow</div>
+                <div class="date" id="futureDate1">03/07</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="weather-icon" id="futureDayIcon1">
+                <div class="temp" id="futureDayTemp1">-5&#176; C</div>
+                <div class="temp" id="futureNightTemp1">15&#176; C</div>
+            </div>
+            <div class="future-forecast">
+                <div class="day" id="futureDay2">Sunday</div>
+                <div class="date" id="futureDate2">03/07</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="weather-icon" id="futureDayIcon2">
+                <div class="temp" id="futureDayTemp2">15&#176; C</div>
+                <div class="temp" id="futureNightTemp2">15&#176; C</div>
+            </div>
+            <div class="future-forecast">
+                <div class="day" id="futureDay3">Monday</div>
+                <div class="date" id="futureDate3">03/07</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="weather-icon" id="futureDayIcon3">
+                <div class="temp" id="futureDayTemp3"> 15&#176; C</div>
+                <div class="temp" id="futureNightTemp3"> 15&#176; C</div>
+            </div>
+            <div class="future-forecast">
+                <div class="day" id="futureDay4">Tuesday</div>
+                <div class="date" id="futureDate4">03/07</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="weather-icon" id="futureDayIcon4">
+                <div class="temp" id="futureDayTemp4">15&#176; C</div>
+                <div class="temp" id="futureNightTemp4">15&#176; C</div>
+            </div>
+            <div class="future-forecast">
+                <div class="day" id="futureDay5">Wednesday</div>
+                <div class="date" id="futureDate5">03/07</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="weather-icon" id="futureDayIcon5">
+                <div class="temp" id="futureDayTemp5">15&#176; C</div>
+                <div class="temp" id="futureNightTemp5">-15 &#176; C</div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <SCript src="weather.js"></SCript>
+
+    </body>
+
+</html>
